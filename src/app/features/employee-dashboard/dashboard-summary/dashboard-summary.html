@@ -1,0 +1,43 @@
+<p>dashboard-summary!</p>
+
+<app-dashboard-card
+    title="Total Employees"
+    [value]="totalEmployee"
+    icon="👨‍💼"
+    trend="+12%">
+</app-dashboard-card>
+
+<app-dashboard-card
+    title="Active Employees"
+    [value]="activeEmployeesCount"
+    icon="✅"
+    trend="+5%">
+</app-dashboard-card>
+
+<app-dashboard-card
+    title="Inactive Employee"
+    [value]="inActiveStatus"
+    icon="📄"
+    trend="-2%">
+</app-dashboard-card>
+
+<app-dashboard-card
+    title="Pending Claims"
+    [value]="42"
+    icon="📄"
+    trend="-2%">
+</app-dashboard-card>
+
+<app-dashboard-card
+    title="Notifications"
+    [value]="8"
+    icon="🔔"
+    trend="+3">
+</app-dashboard-card>
+
+@if (activeEmployeesCount > 0 || inActiveStatus > 0){
+    Total Employee : {{totalEmployee}}
+   Active status :  {{activeEmployeesCount}}
+   Inactive status : {{inActiveStatus}}
+   Dept Count : {{deptCount}}
+}

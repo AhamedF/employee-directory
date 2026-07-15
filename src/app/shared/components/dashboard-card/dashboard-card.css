@@ -1,0 +1,44 @@
+.dashboard-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #141414; /* Netflix dark background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  padding: 16px 24px;
+  width: 100%;
+  max-width: 600px;
+  color: #e5e5e5; /* Netflix light gray text */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+}
+
+.card-icon {
+  font-size: 32px;
+  color: #e50914; /* Netflix red accent */
+  margin-right: 20px;
+}
+
+.dashboard-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 20px 0 0;
+}
+
+.dashboard-card h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #e50914; /* Netflix red for emphasis */
+  margin: 0 20px 0 0;
+}
+
+.dashboard-card small {
+  font-size: 13px;
+  color: #b3b3b3;
+  margin-left: auto;
+}
